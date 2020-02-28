@@ -1,5 +1,5 @@
 {
-    "name": "api-skeletons/zf-doctrine-module-zend-hydrator",
+    "name": "eziofra/zf-doctrine-module-zend-hydrator",
     "description": "Corrects DoctrineModule classes to use zend-hydrator",
     "type": "library",
     "license": "MIT",
@@ -9,9 +9,16 @@
             "email": "tom.h.anderson@gmail.com"
         }
     ],
+    "repositories": [
+        {
+            "type": "vcs",
+            "url": "https://github.com/eziofra/api-tools-doctrine-module-zend-hydrator"
+        }
+    ],
     "require": {
-        "zendframework/zend-hydrator": "~1.0 || ^2.0",
-        "doctrine/doctrine-module": "^1.0"
+        "laminas/laminas-hydrator": "~1.0 || ^2.0",
+        "doctrine/doctrine-module": "^1.0",
+        "laminas/laminas-dependency-plugin": "^1.0"
     },
     "autoload": {
         "psr-4": {

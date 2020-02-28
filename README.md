@@ -5,9 +5,9 @@ DoctrineModule zend-hydrator
 
 ** This is a Patch Repository **
 
-Since the [zendframework/zend-stdlib](https://github.com/zendframework/zend-stdlib) hydrators were moved into their own repository, [zendframework/zend-hydrator](https://github.com/zendframework/zend-hydrator), the [DoctrineModule](https://github.com/doctrine/DoctrineModule) repository has not been updated to correctly use the new library.  Through many discussions on the issue [@doctrineorm](https://twitter.com/doctrineorm) continues to maintain they are in line with [zendframework/zend-hydrator](https://github.com/zendframework/zend-hydrator) because, very unusually, the new library was written to be backwards compatible with [zendframework/zend-stdlib](https://github.com/zendframework/zend-stdlib) but that backwards compatibility was removed from zend-hydrator in later versions leaving developers who want to use Doctrine in their projects which allow for custom hydrators out on a limb.
+Since the [laminas/laminas-stdlib](https://github.com/laminas/laminas-stdlib) hydrators were moved into their own repository, [laminas/laminas-hydrator](https://github.com/laminas/laminas-hydrator), the [DoctrineModule](https://github.com/doctrine/DoctrineModule) repository has not been updated to correctly use the new library.  Through many discussions on the issue [@doctrineorm](https://twitter.com/doctrineorm) continues to maintain they are in line with [laminas/laminas-hydrator](https://github.com/laminas/laminas-hydrator) because, very unusually, the new library was written to be backwards compatible with [laminas/laminas-stdlib](https://github.com/laminas/laminas-stdlib) but that backwards compatibility was removed from zend-hydrator in later versions leaving developers who want to use Doctrine in their projects which allow for custom hydrators out on a limb.
 
-This library overrides the files from [DoctrineModule](https://github.com/doctrine/DoctrineModule) which are broken because they still reference [zendframework/zend-stdlib](https://github.com/zendframework/zend-stdlib) for their hydrators.
+This library overrides the files from [DoctrineModule](https://github.com/doctrine/DoctrineModule) which are broken because they still reference [laminas/laminas-stdlib](https://github.com/laminas/laminas-stdlib) for their hydrators.
 
 Discussion on this issue:
  * Jan 30, 2016: https://github.com/doctrine/DoctrineModule/pull/548
@@ -45,14 +45,14 @@ When to use this Patch Repository
 If you are using custom hydrators for your entities and you see errors like the following, this repository will correct them.
 
 ```
-Argument 2 passed to Zend\Stdlib\Hydrator\AbstractHydrator::addStrategy() must be an instance of Zend\Stdlib\Hydrator\Strategy\StrategyInterface ...
+Argument 2 passed to Laminas\Stdlib\Hydrator\AbstractHydrator::addStrategy() must be an instance of Laminas\Stdlib\Hydrator\Strategy\StrategyInterface ...
 ```
 
 
 This is a Patch Repository
 --------------------------
 
-If you would like to be involved in the conversation at [DoctrineModule](https://github.com/doctrine/DoctrineModule) to help get [zendframework/zend-hydrator](https://github.com/zendframework/zend-hydrator) implemented correctly in [@doctrineorm](https://twitter.com/doctrineorm) repository you may contribute to the discussions linked above.
+If you would like to be involved in the conversation at [DoctrineModule](https://github.com/doctrine/DoctrineModule) to help get [laminas/laminas-hydrator](https://github.com/laminas/laminas-hydrator) implemented correctly in [@doctrineorm](https://twitter.com/doctrineorm) repository you may contribute to the discussions linked above.
 
 
 Appreciation
